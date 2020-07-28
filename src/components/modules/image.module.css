@@ -1,0 +1,23 @@
+.images {
+  border: 10px solid red;
+  text-align: center;
+  width: 100vh;
+  text-transform: capitalize;
+  margin: 0 auto 10rem auto;
+}
+
+.singleImage {
+  border: 2px solid blue;
+}
+
+@media screen and (min-width: 992px) {
+  .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+  }
+}
+
+.small {
+  width: 100px;
+}
