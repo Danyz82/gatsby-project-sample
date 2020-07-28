@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const NavBar = () => {
+const Header = () => {
   return (
     <nav>
       <ul>
@@ -14,9 +14,12 @@ const NavBar = () => {
         <li>
           <Link to="/product/">Product</Link>
         </li>
+        <li>
+          <Link to="/examples/">Examples</Link>
+        </li>
       </ul>
     </nav>
   )
 }
 
-export default NavBar
+export default Header

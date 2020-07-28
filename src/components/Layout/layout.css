@@ -1,0 +1,19 @@
+body {
+  font-size: 30px;
+}
+
+h1 {
+  color: #e00;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+h3 {
+  color: blue;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+ul {
+  margin-left: 200px;
+}
