@@ -14,7 +14,7 @@ const styles = {
     width: "90vw",
     maxWidth: 1170,
     margin: "3rem auto",
-    backgroundColor: "red",
+    backgroundColor: "blue",
   },
   [`@media (min-width: ${minWidthSm}px)`]: {
     singleProduct: {
