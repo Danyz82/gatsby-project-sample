@@ -1,12 +1,13 @@
 import React from "react";
 import Layout from "../components/Layout";
+import Team from "../components/Team";
 
-const blog = () => {
+const shop = () => {
   return (
     <Layout>
-      <h1>This is blog page</h1>
+      <Team />
     </Layout>
   );
 };
 
-export default blog;
+export default shop;

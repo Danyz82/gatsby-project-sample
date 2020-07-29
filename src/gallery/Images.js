@@ -1,8 +1,8 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import img from "../images/image_1.jpg"
-import Image from "gatsby-image"
-import style from "../components/modules/image.module.css"
+import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
+import img from "../images/image_1.jpg";
+import Image from "gatsby-image";
+import style from "../components/modules/image.module.css";
 
 const getImages = graphql`
   {
@@ -30,17 +30,16 @@ const getImages = graphql`
       }
     }
   }
-`
+`;
 
 const Images = () => {
-  const data = useStaticQuery(getImages)
-  console.log(data)
+  const data = useStaticQuery(getImages);
 
   return (
     <section className={style.images}>
       <article className={style.singleImage}>
         <h3>Basic image</h3>
-        <img src={img} width="100%" />
+        <img alt="" src={img} width="100%" />
       </article>
       <article className={style.singleImage}>
         <h3>Fixed image/blur</h3>
@@ -58,7 +57,7 @@ const Images = () => {
         <Image fluid={data.fluidMax.childImageSharp.fluid} />
       </article>
     </section>
-  )
-}
+  );
+};
 
-export default Images
+export default Images;
